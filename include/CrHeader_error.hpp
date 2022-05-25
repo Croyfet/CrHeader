@@ -21,8 +21,8 @@
 //
 
 
-#ifndef _INCLUDE_GUARD_CRHEADER_HPP_
-#define _INCLUDE_GUARD_CRHEADER_HPP_
+#ifndef _INCLUDE_GUARD_CRHEADER_ERROR_HPP_
+#define _INCLUDE_GUARD_CRHEADER_ERROR_HPP_
 
 #include <CrHeader_error.h>
 

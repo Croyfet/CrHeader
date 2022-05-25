@@ -21,8 +21,8 @@
 //
 
 
-#ifndef _INCLUDE_GUARD_CRHEADER_H_
-#define _INCLUDE_GUARD_CRHEADER_H_
+#ifndef _INCLUDE_GUARD_CRHEADER_ERROR_H_
+#define _INCLUDE_GUARD_CRHEADER_ERROR_H_
 
 #ifdef __cplusplus
 #include <cstdint>
