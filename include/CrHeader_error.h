@@ -35,8 +35,6 @@ extern "C"
 {
 #endif
 
-	enum _tag_CcErrorReason;
-	typedef enum _tag_CcErrorReason _CcErrorReason;
 	enum _tag_CcErrorReason
 	{
 		_CCERROR_REASON_NULLPTR =                   1,
@@ -95,9 +93,9 @@ extern "C"
 		_CCERROR_REASON_WHY_COME_HERE =             54,
 		_CCERROR_REASON_UNEXPECTED =                55,
 	};
+	typedef enum _tag_CcErrorReason _CcErrorReason;
 
-	enum _tagCcError;
-	typedef enum _tagCcError CcError;
+
 	enum _tagCcError
 	{
 		CCERROR_SUCCESS =                    0x00000000,
@@ -157,6 +155,7 @@ extern "C"
 		CCERROR_WHY_COME_HERE =              0x80000000 | _CCERROR_REASON_WHY_COME_HERE,
 		CCERROR_UNEXPECTED =                 0x80000000 | _CCERROR_REASON_UNEXPECTED,
 	};
+	typedef enum _tagCcError CcError;
 
 	inline bool CCERROR_HAS_ERROR(CcError crs) { if ((crs & 0x80000000) == 0x80000000) { return true; } else { return false; } }
 
