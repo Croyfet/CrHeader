@@ -26,8 +26,10 @@
 
 #ifdef __cplusplus
 #include <cstdint>
+#include <cwchar>
 #else
 #include <stdint.h>
+#include <wchar.h>
 #endif
 
 #ifdef __cplusplus
