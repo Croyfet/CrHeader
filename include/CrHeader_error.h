@@ -207,9 +207,9 @@ extern "C"
 	};
 	typedef enum _tagCcError CcError;
 
-	inline bool CCERROR_HAS_ERROR(CcError crs) { if ((crs & 0x80000000) == 0x80000000) { return true; } else { return false; } }
+	static inline bool CCERROR_HAS_ERROR(CcError crs) { if ((crs & 0x80000000) == 0x80000000) { return true; } else { return false; } }
 
-	inline bool CCERROR_IS_SUCCESS(CcError crs) { if (crs >= 0x00000000) { return true; } else { return false; } }
+	static inline bool CCERROR_IS_SUCCESS(CcError crs) { if (crs >= 0x00000000) { return true; } else { return false; } }
 
 #ifdef __cplusplus
 }
