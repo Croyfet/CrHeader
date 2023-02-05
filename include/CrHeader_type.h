@@ -66,7 +66,7 @@ typedef struct __CC_HANDLE_##CC_HANDLE_NAME* CC_HANDLE_NAME;
 #define CC_H1DWORD(dw) (dw >> 16)
 #define CC_H2DWORD(dw) (dw & 0xffff)
 #define CC_H1QWORD(qw) (qw >> 32)
-#define CC_H2QWORD(qw) (qw & 0xffff)
+#define CC_H2QWORD(qw) (qw & 0xffffffffllu)
 #define CC_Q1QWORD(qw) (qw >> 48)
 #define CC_Q2QWORD(qw) ((qw >> 32) & 0xffff)
 #define CC_Q3QWORD(qw) ((qw >> 16) & 0xffff)

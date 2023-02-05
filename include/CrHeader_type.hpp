@@ -54,7 +54,7 @@ namespace cc
 	inline constexpr cc::DWORD H1DWORD(cc::DWORD dw) { return (dw >> 16); }
 	inline constexpr cc::DWORD H2DWORD(cc::DWORD dw) { return (dw & 0xffff); }
 	inline constexpr cc::QWORD H1QWORD(cc::QWORD qw) { return (qw >> 32); }
-	inline constexpr cc::QWORD H2QWORD(cc::QWORD qw) { return (qw & 0xffff); }
+	inline constexpr cc::QWORD H2QWORD(cc::QWORD qw) { return (qw & 0xffffffffllu); }
 	inline constexpr cc::QWORD Q1QWORD(cc::QWORD qw) { return (qw >> 48); }
 	inline constexpr cc::QWORD Q2QWORD(cc::QWORD qw) { return ((qw >> 32) & 0xffff); }
 	inline constexpr cc::QWORD Q3QWORD(cc::QWORD qw) { return ((qw >> 16) & 0xffff); }
